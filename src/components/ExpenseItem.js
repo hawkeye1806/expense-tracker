@@ -1,10 +1,10 @@
 import "./ExpenseItem.css";
 
-function ExpenseItem() {
-  const expenceDate = new Date(2021, 2, 28);
+function ExpenseItem(props) {
+  const expenceDate = props.date;
   //   console.log(expenceDate);
-  const expenceTitle = "Car Insurance";
-  const expenceAmount = 294.67;
+  const expenceTitle = props.title;
+  const expenceAmount = props.amount;
 
   return (
     <div className="expense-item">
